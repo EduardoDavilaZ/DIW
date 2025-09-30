@@ -6,7 +6,7 @@ body{
 
 table {
     border-collapse: collapse;
-    width: 60%;
+    width: 600px;
 }
 
 th, td {
@@ -32,40 +32,38 @@ header h1 {
 }
 
 nav{
-    width: 1280px;  /* 1440px - 160 px - restarle padding 80 + 80*/
+    width: 1280px;  /* 1440px - 160 px (restar margin) - 80 + 80 (restar padding)*/
     height: 65px; /*900px / 20 + 20px*/
     background-color: rgb(188, 188, 188);
     padding: 0 80px;
-    
-    ul {
-        position: absolute;
-        list-style: none;
-        
-        margin-top: 11.2px; /*900px / 80*/
-        padding: 0;
-        
-        li{
-            display: inline-block;
-            margin-right: 268px; /* 1440px / 5 - 20px*/
-            margin-left: 268px; /* 1440px / 5 - 20px*/
-            margin-bottom: 0;
-            margin-top: 0;
-            background-color: #003f0f;
-            border-radius: 10px;
-            padding: 10px;
-            
-            a{
-                text-decoration: none;
-                color: white;
-                font-weight: bolder;
-                font-size: 15px;
-            }
-        }
-    }
 }
 
+nav ul {
+    list-style: none;
+    
+    margin-top: 11.2px; /*900px / 80*/
+    padding: 0;
+}
 
-.container, form{
+nav ul li{
+    display: inline-block;
+    margin-right: 254px; /* 1440px / 5 - 34px*/
+    margin-left: 254px; /* 1440px / 5 - 34px*/
+    margin-bottom: 0;
+    margin-top: 12px;
+    background-color: #003f0f;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+form{
     width: 1360px; /*1440px - 80px (restar padding)*/
     background-color: rgb(225, 225, 225);
     margin-top: 0;
@@ -82,28 +80,32 @@ section{
     width: 1280px; /*1440px - 160px*/
     height: 400px; /*900px - 500px*/
     padding: 40px;
-    position: relative;
+    margin: 40px;
     border-radius: 10px;
+}
 
-    h3{
-        margin: auto;
-        text-align: center;
-    }
+section h3{
+    margin: auto;
+    text-align: center;
+}
 
-    .p1{
-        border: 1px solid #003f0f;
-        border-radius: 10px;
-        width: 800px; /*1440px - 640*/
-        padding: 10px;
-    }
+section .p1{
+    border: 1px solid #003f0f;
+    border-radius: 10px;
+    width: 778px; /*1440px - 662*/
+    padding: 10px;
+}
+
+section  div{
+    width: 800px;
+    float: left;
 }
 
 section > img{
     width: 320px;
-    position: absolute;
-    top: 120px;
-    right: 80px;
-    margin-left: 144px; /*1440px / 10*/
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
 article{
@@ -112,18 +114,17 @@ article{
     width: 380px;
     float: left;
     margin: 20px;
+}
 
-    .p2{
-        width: 350px;
-        padding: 20px;
-    }
+article .p2{
+    width: 350px;
+    padding: 20px;
+}
 
-    img{
-        width: 220px;
-        padding-left: 100px;
-        border-radius: 10px;
-    }
-    
+article img{
+    width: 220px;
+    padding-left: 100px;
+    border-radius: 10px;
 }
 
 footer{
