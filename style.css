@@ -1,3 +1,10 @@
+/**********************
+
+    ANCHO: 1440px
+    ALTO: 900px
+
+***********************/
+
 body{
     margin: 0;
     padding: 0;
@@ -6,7 +13,8 @@ body{
 
 table {
     border-collapse: collapse;
-    width: 600px;
+    width: 720px; /*50% del ancho*/
+
 }
 
 th, td {
@@ -17,6 +25,10 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+tr:nth-child(2n+1){
+    background-color: #b6b6b6;
 }
 
 header {
@@ -34,19 +46,18 @@ header h1 {
 nav{
     width: 1280px;  /* 1440px - 160 px (restar margin) - 80 + 80 (restar padding)*/
     height: 65px; /*900px / 20 + 20px*/
-    background-color: rgb(188, 188, 188);
+    background-color: #9f9f9f;
     padding: 0 80px;
 }
 
 nav ul {
     list-style: none;
-    
     margin-top: 11.2px; /*900px / 80*/
     padding: 0;
 }
 
 nav ul li{
-    display: inline-block;
+    display: inline-block; /*Se diferencia entre el float porque mantiene el flujo normal*/
     margin-right: 254px; /* 1440px / 5 - 34px*/
     margin-left: 254px; /* 1440px / 5 - 34px*/
     margin-bottom: 0;
@@ -76,12 +87,13 @@ fieldset{
 }
 
 section{
-    background-color: #97dea8;
+    background-color: #ffffff;
     width: 1280px; /*1440px - 160px*/
     height: 400px; /*900px - 500px*/
     padding: 40px;
     margin: 40px;
     border-radius: 10px;
+    background-color: #bcbcbc;
 }
 
 section h3{
@@ -94,18 +106,19 @@ section .p1{
     border-radius: 10px;
     width: 778px; /*1440px - 662*/
     padding: 10px;
+    background-color: #ffffff;
 }
 
 section  div{
-    width: 800px;
+    width: 720px; /*1440 / 2*/
     float: left;
 }
 
-section > img{
-    width: 320px;
+.img{
+    width: 360px; /*1440 / 4*/
     float: left;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-left: 180px; /*360 / 2*/
+    margin-top: 60px /*180 / 2*/;
 }
 
 article{
@@ -114,6 +127,7 @@ article{
     width: 380px;
     float: left;
     margin: 20px;
+    background-color: #ffffff;
 }
 
 article .p2{
@@ -122,8 +136,8 @@ article .p2{
 }
 
 article img{
-    width: 220px;
-    padding-left: 100px;
+    width: 240px; /*1440 / 6*/
+    padding-left: 60px; /*240 / 4*/
     border-radius: 10px;
 }
 
@@ -136,7 +150,7 @@ footer{
     color: white;
 }
 
-footer > div{
+.footer-div {
     float: left;
     width: 600px; /*1440px / 2 - 80px - 40px quitarle el padding*/
     margin: 20px;
@@ -152,4 +166,3 @@ footer a{
     text-decoration: none;
     color: white;
 }
-
