@@ -8,13 +8,12 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
 }
 
 table {
     border-collapse: collapse;
     width: 720px; /*50% del ancho*/
-
 }
 
 th, td {
@@ -52,8 +51,8 @@ nav{
 
 nav ul {
     list-style: none;
-    margin-top: 11.2px; /*900px / 80*/
     padding: 0;
+    margin: 0;
 }
 
 nav ul li{
@@ -110,15 +109,15 @@ section .p1{
 }
 
 section  div{
-    width: 720px; /*1440 / 2*/
+    width: 720px; /*1440px / 2*/
     float: left;
 }
 
 .img{
-    width: 360px; /*1440 / 4*/
+    width: 360px; /*1440px / 4*/
     float: left;
-    margin-left: 180px; /*360 / 2*/
-    margin-top: 60px /*180 / 2*/;
+    margin-left: 180px; /*360px (ancho de .img) / 2*/
+    margin-top: 60px /*180px (margin-left) / 2*/;
 }
 
 article{
@@ -136,13 +135,13 @@ article .p2{
 }
 
 article img{
-    width: 240px; /*1440 / 6*/
-    padding-left: 60px; /*240 / 4*/
+    width: 240px; /*1440px / 6*/
+    padding-left: 60px; /*240px / 4*/
     border-radius: 10px;
 }
 
 footer{
-    width: 1400px; /*1440px - 40px (restar padding)*/
+    width: 1400px; /*1440px - (20px + 20px) (restar padding)*/
     height: 200px;
     margin-top: 0;
     padding: 20px;
@@ -152,7 +151,7 @@ footer{
 
 .footer-div {
     float: left;
-    width: 600px; /*1440px / 2 - 80px - 40px quitarle el padding*/
+    width: 600px; /*1440px / 2 - 80px - 40px quitarle el margin y padding*/
     margin: 20px;
     padding: 20px;
     text-align: center;
@@ -160,6 +159,7 @@ footer{
 
 footer ul{
     list-style: none;
+    margin: 0;
 }
 
 footer a{
